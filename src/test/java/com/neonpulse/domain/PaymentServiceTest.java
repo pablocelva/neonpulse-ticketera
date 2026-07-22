@@ -1,8 +1,11 @@
 package com.neonpulse.domain;
 
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
+@DisplayName("Servicio de Pagos (PaymentService)")
 public class PaymentServiceTest {
     private static class DummyNotifier implements MessageNotifier {
         @Override
@@ -12,6 +15,7 @@ public class PaymentServiceTest {
     }
 
     @Test
+    @DisplayName("Debe fallar al procesar pago con ticketId inválido")
     public void shouldFailWhenProcessingPaymentWithInvalidTicketId() {
         // Arrange
         MessageNotifier dummyNotifier = new DummyNotifier();
