@@ -1,9 +1,11 @@
-package com.neonpulse.domain;
+package com.neonpulse.application.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ShoppingCart {
+
+    // Definir los valores iniciales
     private double total = 0.0;
     private List<Object> items = new ArrayList<>();
 

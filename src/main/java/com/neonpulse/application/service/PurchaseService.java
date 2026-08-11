@@ -1,8 +1,9 @@
-package com.neonpulse.domain;
+package com.neonpulse.application.service;
 
-import com.neonpulse.domain.SmsNotifier;
+import com.neonpulse.application.port.SmsNotifier;
 
 public class PurchaseService {
+
     private final SmsNotifier notifier;
 
     public PurchaseService(SmsNotifier notifier) {
